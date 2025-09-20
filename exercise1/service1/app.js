@@ -1,10 +1,10 @@
 
 import { PORT, SERVICE2_URL, STORAGE_URL } from './constants.js';
 
-const express = require('express');
-const axios = require('axios');
-const fs = require('fs');
-const os = require('os');
+import express from 'express';
+import axios from 'axios';
+import fs from 'fs';
+import os from 'os';
 
 const app = express();
 
