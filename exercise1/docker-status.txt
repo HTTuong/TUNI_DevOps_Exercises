@@ -1,0 +1,12 @@
+=== Docker Containers ===
+CONTAINER ID   IMAGE                COMMAND                  CREATED          STATUS          PORTS                                         NAMES
+269b8c74788b   exercise1-service1   "docker-entrypoint.s…"   13 minutes ago   Up 13 minutes   0.0.0.0:8199->3000/tcp, [::]:8199->3000/tcp   exercise1-service1-1
+a3f7f3c270b8   exercise1-service2   "python app.py"          13 minutes ago   Up 13 minutes   3001/tcp                                      exercise1-service2-1
+1f0dd8861c80   exercise1-storage    "./storage-app"          13 minutes ago   Up 13 minutes   3002/tcp                                      exercise1-storage-1
+
+=== Docker Network ===
+NETWORK ID     NAME                    DRIVER    SCOPE
+7cd62494d442   bridge                  bridge    local
+695899863dd5   exercise1_app-network   bridge    local
+e4036f2da1ab   host                    host      local
+da4be4a1a29b   none                    null      local
