@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  service1:
+    build: ./service1
+    ports:
+      - "8199:3000"
+    networks:
+      - app-network
+    volumes:
+      - vstorage:/vstorage
+    depends_on:
+      - service2
+      - storage
+
+  service2:
+    build: ./service2
+    networks:
+      - app-network
+    volumes:
+      - vstorage:/vstorage
+    depends_on:
+      - storage
+
+  storage:
+    build: ./storage
+    networks:
+      - app-network
+    volumes:
+      - storage-data:/data
+      - vstorage:/vstorage
+
+networks:
+  app-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  vstorage:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./vstorage
+  storage-data:
+    driver: local
