@@ -22,6 +22,8 @@
 
 ## System Architecture Diagram
 
+https://drive.google.com/file/d/1j0MIbl1KPV57kcJJRYyPuGsNmr3Rx7I6/view?usp=sharing
+
 
 
 ## Analysis of Status Records
