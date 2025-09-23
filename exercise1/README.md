@@ -77,7 +77,7 @@ docker volume rm exercise1_storage-data exercise1_vstorage 2>/dev/null || true
 rm -f vstorage/log.txt
 
 # Remove Docker images
-docker rmi exercise1_service1 exercise1_service2 exercise1_storage 2>/dev/null || true
+docker rmi service1 exercise1-service1 exercise1-service2 exercise1-storage 2>/dev/null || true
 ```
 
 ## Technical Difficulties and Main Problems
