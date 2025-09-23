@@ -1,0 +1,14 @@
+LLM Usage Report for Exercise 1
+
+Used LLM Tool: DeepSeek (Version 3.1, 2025), Grammarly Free Version 
+
+Motivation/Reason for Use:
+- DeepSeek: Troubleshooting technical issues like psutil compilation errors
+- Grammarly Free Version: Grammar and spelling correction if needed
+
+How LLM Helped:
+- DeepSeek: Suggested ideas for solving psutil compilation issues on Alpine Linux. Because DeepSeek can only provide possible ideas, I still have to review it by myself then write my own code and solution for the issue.
+- Grammarly Free Version: Grammar and spelling correction if needed: It is used to help correct grammar and spelling mistakes, but the free version is still limited. I still write it in my own words.  
+
+Limitations of LLM Assistance:
+- DeepSeek: Many suggested ideas from Deepseek were incorrect and could not solve the problem even though I provided it with the Alpine Linux version. So I still had to search for solutions on the forums myself, combine them with the ideas from Deepseek and write my own fix code without using external libraries like psutil anymore.
